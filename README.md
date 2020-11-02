@@ -1,5 +1,4 @@
-aw-android
-==========
+# aw-android
 
 A very work-in-progress ActivityWatch app for Android.
 
@@ -9,18 +8,15 @@ Available on Google Play:
     <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="240px"/>
 </a>
 
-
 ## Usage
 
-Due to the massive disclaimer we put up to prevent people from getting disappointed when things break or just don't work great, you first need to navigate to the Web UI in the side menu. We hope to change this soon, when things don't suck as much.
-
+Due to the massive disclaimer we put up to prevent people from getting disappointed when things break or just don't work great, you first need to navigate to Activity in the side menu. We hope to change this soon, when things don't suck as much.
 
 ### For Oculus Quest
 
-It's available [on SideQuest](https://sidequestvr.com/#/app/201). 
+It's available [on SideQuest](https://sidequestvr.com/#/app/201).
 
 **Note:** you might need to install AppStarter to find it the app menus. If this is the case, open an issue and include the steps for what you had to do.
-
 
 ## Building
 
@@ -38,7 +34,7 @@ pushd aw-server-rust && ./install-ndk.sh; popd  # This configures the NDK for us
 env RELEASE=false make aw-server-rust  # Set RELEASE=true to build in release mode (slower build, harder to debug)
 ```
 
-Note: The Android NDK will be downloaded by the `install-ndk.sh` script if missing. The location of the Android NDK *must* be `aw-server-rust/NDK`. You can create a symlink pointing to the real location if you already have it elsewhere (such as /opt/android-ndk/ on Arch Linux).
+Note: The Android NDK will be downloaded by the `install-ndk.sh` script if missing. The location of the Android NDK _must_ be `aw-server-rust/NDK`. You can create a symlink pointing to the real location if you already have it elsewhere (such as /opt/android-ndk/ on Arch Linux).
 
 ### Building aw-webui
 
